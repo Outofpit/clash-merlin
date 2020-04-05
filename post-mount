@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /jffs/addons/diversion/mount-entware.div # Added by amtm
+
+start-stop-daemon -S -b -x /jffs/clash -m -p /tmp/clash.pid -- -d /jffs/
